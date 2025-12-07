@@ -10,7 +10,7 @@
 
     <header class="Cabecera">
         <h1>Buscador de Currículums</h1>
-        <input type="text" placeholder="Buscar por nombre, habilidades, ciudad..." class="buscador">
+        <input type="text" placeholder="Nivel de programador" class="buscador">
     </header>
 
     <section class="contenedor-curriculums">
@@ -51,5 +51,23 @@
         <p>Proyecto de Aplicaciones Web - 2025</p>
     </footer>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.querySelector('.buscador');
+            const cards = document.querySelectorAll('.card');
+
+            searchInput.addEventListener('input', (e) => {
+                const query = e.target.value.toLowerCase();
+                cards.forEach(card => {
+                    const title = card.querySelector('p').textContent.toLowerCase();
+                    if (title.includes(query)) {
+                        card.style.display = '';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
