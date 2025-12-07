@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Jordan Loor Suárez</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+
+<body>
+ <div class="scroll-glow-full"></div>
+
+    <header class="hero">
+        <div class="perfil">
+            <img src="./imagenes/Josue.jpg" alt="Foto de perfil">
+            <h1>Jordan Josue Loor Suárez</h1>
+            <h3>Estudiante de la Universidad Técnica Estatal de Quevedo</h3>
+        </div>
+    </header>
+
+    <div class="section-bg">
+
+        <section class="contenido">
+
+            <div class="columna izquierda">
+                
+                <h2>Contacto</h2>
+                <ul>
+                    <li>Email: jloors13@uteq.edu.ec</li>
+                    <li>Teléfono: 0983962015</li>
+                    <li>Ciudad: Buena Fé</li>
+                </ul>
+
+                <h2>Habilidades</h2>
+                <ul>
+                    <li>HTML y CSS</li>
+                    <li>C#</li>
+                    <li>SQL Server & MySQL</li>
+                </ul>
+
+                <h2>Idiomas</h2>
+                <ul>
+                    <li>Español — Nativo</li>
+                    <li>Inglés — Básico / Intermedio</li>
+                </ul>
+
+            </div>
+
+            <div class="columna derecha">
+
+                <h2>Perfil Profesional</h2>
+                <p>
+                    Soy un entusiasta por la tecnología con una fuerte motivación por aprender y aplicar nuevos enfoques en la resolución de problemas. 
+                    Me caracterizo por ser una persona perseverante, con iniciativa y con una gran disposición para enfrentar desafíos que impulsen mi 
+                    crecimiento tanto profesional como personal. Disfruto trabajar en entornos donde pueda aplicar mis conocimientos, desarrollar nuevas 
+                    habilidades y contribuir con ideas que generen valor.
+                </p>
+
+                <h2>Educación</h2>
+                <div class="item">
+                    <h3>Colegio</h3>
+                    <p>Colegio Nacional Dr. José María Velasco Ibarra</p>
+
+                    <h3>Universidad</h3>
+                    <p class="uni">
+                        Universidad Técnica Estatal de Quevedo
+                        <a href="https://www.uteq.edu.ec/" target="_blank">
+                            <img src="./imagenes/uteq.png" alt="UTEQ" class="logo-uteq">
+                        </a>
+                    </p>
+                </div>
+
+                <h2>Proyectos Destacados</h2>
+                <div class="item">
+                    <h3>Sistema para Gestión de un Hotel</h3>
+                    <p>
+                        Desarrollo de un sistema enfocado en la administración de reservas, clientes, habitaciones y reportes internos,
+                        implementado con buenas prácticas de programación y estructura organizada.
+                    </p>
+
+                    <h3>Sistema de Alfabetización Tradicional y Digital</h3>
+                    <p>
+                        Proyecto orientado a facilitar el aprendizaje básico de lectura, escritura y habilidades digitales mediante una
+                        plataforma interactiva y accesible para usuarios principiantes.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+<script>
+document.addEventListener("scroll", () => {
+    const glow = document.querySelector(".scroll-glow-full");
+    glow.style.opacity = "1";
+
+    clearTimeout(window.glowTimeout);
+    window.glowTimeout = setTimeout(() => {
+        glow.style.opacity = "0";
+    }, 300);
+});
+</script>
+
+<div class="volver-container">
+    <a href="index.html" class="btn-volver">⟵ Regresar a la página principal</a>
+</div>
+
+<footer class="footer">
+    <p>© 2025 Aplicaciones Web- UTEQ-Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
