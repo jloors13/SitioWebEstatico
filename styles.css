@@ -1,0 +1,189 @@
+   /* --------------- Estilos para el index principal ---------------------- */
+
+/* Cabecera */
+.Cabecera {
+    text-align: center;
+    padding: 30px 20px;
+    background: #1e1e1e;
+    color: white;
+}
+
+.buscador {
+    width: 90%;
+    max-width: 500px;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+}
+
+/* Contenedor principal */
+.contenedor-curriculums {
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contenedor-curriculums h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Grid de tarjetas */
+.grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.card {
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: transform .2s, background .2s;
+}
+
+.card:hover {
+    background: #dcdcdc;
+    transform: translateY(-5px);
+}
+
+.ImgLogoPerfil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto 0 auto;
+}
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background: #1e1e1e;
+    color: white;
+}
+
+   /* -------------- Estilos para CVDA ------------------- */
+
+   body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                display: flex;
+                height: 100vh;
+                flex-direction: column;
+                min-height: 100vh; /* altura mínima igual a toda la pantalla */
+            }
+
+    .Layout {
+            display: flex;
+            flex: 1;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 220px;
+            background-color: #222;
+            color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .sidebar h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 8px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+
+        .sidebar ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .sidebar ul li a:hover {
+            text-decoration: underline;
+            background: #3b3b3b;
+            padding: 10px;
+        }
+
+        /* Contenedor principal */
+        .Contenido {
+            flex: 1;
+            display: flex;
+            flex-direction: column; /* Se usa para que el orden de las cajas sea uno abajo de otro (En columna) */
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #1e1e1e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        /* Cuerpo del currículum */
+        .contenidoCV {
+            padding: 20px;
+            flex: 1;
+            overflow-y: auto; /* Permite desplazarse (el scroll) si el contenido es largo */
+        }
+
+        .cuadroinformacion {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .Contenedorparaimg {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;            
+            gap: 20px;                      
+        }
+
+        .ImgPerfil {
+            width: 160px;        
+            height: auto;
+            border-radius: 10px; 
+        }
+
+        .ImgPerfil {
+            width: 120px;   
+            height: auto;
+            margin-left: 20px;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 2px;
+            text-align: center;
+            font-size: 14px;
+        }
+
